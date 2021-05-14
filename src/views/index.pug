@@ -1,0 +1,19 @@
+extends layouts/layout
+include components/header
+include components/footer
+include components/menu
+
+block title
+  | Портфолио
+
+block header
+  +header()
+
+block main
+  main
+
+block footer
+  +footer()
+
+block modal
+  +menu()

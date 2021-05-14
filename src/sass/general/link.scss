@@ -1,0 +1,251 @@
+.link {
+  transition: all 0.3s;
+}
+
+.link--black {
+  color: $black;
+
+  &:active {
+    color: $light-blue;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $light-blue;
+    }
+  }
+}
+
+.link--green {
+  color: $green !important;
+
+  &:active {
+    color: $red !important;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $red !important;
+    }
+  }
+}
+
+.link--grey {
+  color: $grey;
+
+  &:active {
+    color: $red;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.link--light-grey-2 {
+  color: $light-grey-2;
+
+  &:active {
+    color: $red;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.link--light-grey {
+  color: rgba(67, 66, 66, 0.7);
+
+  &:active {
+    color: $red;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.link--underlined {
+  span {
+    border-bottom: 1px dashed;
+  }
+}
+
+.link-arrow-animate {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      .link-arrow-animate__svg {
+        transform: translateX(3px);
+      }
+    }
+  }
+}
+
+.link-arrow-animate__container {
+  overflow: hidden;
+  width: 30px;
+  height: 22px;
+}
+
+.link-arrow-animate__svg {
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  transition: transform .467s cubic-bezier(.55,0,.1,1);
+  transform: translateX(-30px);
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.link-arrow-animate--sm {
+  justify-content: flex-start;
+
+  .link-arrow-animate__container {
+    width: 15px;
+    height: 20px;
+  }
+
+  .link-arrow-animate__svg {
+    transform: translateX(-10px);
+  }
+}
+
+.link-visual {
+  display: flex;
+  align-items: center;
+  padding-bottom: 6px;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $green;
+    transition: all 0.3s;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      .icon {
+        background-color: $red;
+      }
+    }
+  }
+}
+
+.link-sales {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: $yellow;
+    transition: all 0.3s;
+    margin-right: 7px;
+    flex-shrink: 0
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      .icon {
+        background-color: $red;
+      }
+    }
+  }
+}
+
+.link-view {
+  color: rgba($grey, 0.4);
+
+  &.active {
+    color: $green;
+    cursor: default;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $red;
+
+      &.active {
+        color: $green;
+      }
+    }
+  }
+}
+
+@keyframes spin { 
+  from { 
+      transform: rotate(0deg); 
+  } to { 
+      transform: rotate(-360deg); 
+  }
+}
+
+.loader {
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.link-basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  background-color: $green;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+
+  &:active {
+    color: $white;
+    background-color: $red;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $white;
+      background-color: $red;
+    }
+  }
+
+  @media (max-width: $media-tb) {
+    width: 42px;
+    height: 42px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+}
