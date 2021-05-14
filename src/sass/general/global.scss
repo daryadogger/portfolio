@@ -18,7 +18,7 @@ body {
   padding: 0;
   font-family: $font;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.2;
   color: $grey;
   -webkit-locale: auto;
@@ -28,23 +28,6 @@ body {
 main {
   position: relative;
   flex-grow: 1;
-  padding-top: 245px;
-
-  @media (max-width: $media-md) {
-    padding-top: 240px;
-  }
-
-  @media (max-width: 1099px) {
-    padding-top: 232px;
-  }
-
-  @media (max-width: $media-td) {
-    padding-top: 95px;
-  }
-
-  @media (max-width: $media-tb) {
-    padding-top: 76px;
-  }
 }
 
 p {
@@ -65,10 +48,6 @@ a {
   }
 }
 
-button {
-  -webkit-tap-highlight-color: transparent;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -83,16 +62,7 @@ img {
   @include visually-hidden;
 }
 
-input, textarea, select {
-  appearance: none;
-  border-radius: 0;
-}
-
 .is-menu-open {
   position: fixed;
   overflow: hidden;
-}
-
-button, input, optgroup, select, textarea {
-  font-family: $font;
 }

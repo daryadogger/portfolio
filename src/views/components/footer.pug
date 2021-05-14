@@ -1,3 +1,22 @@
 mixin footer(data)
   footer.footer(class!=attributes.class)
-    
+    .container
+      .row
+        .col-md-5
+          h2.fw-500.mb-5.color-purple Свяжитесь со мной
+
+        .col-md-7
+          ul.list
+            li
+              a.d-block.link(href="mailto:zhihareva.d@mail.ru")
+                svg(width='45' height='45')
+                  use(xlink:href="img/sprite/sprite.svg#icon-mail")
+            li
+              a.d-block.link(href="https://t.me/daryadogger")
+                svg(width='45' height='45')
+                  use(xlink:href="img/sprite/sprite.svg#icon-telegram")
+            li
+              a.d-block.link(href="https://github.com/daryadogger")
+                svg(width='45' height='45')
+                  use(xlink:href="img/sprite/sprite.svg#icon-github")
+

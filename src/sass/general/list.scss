@@ -10,64 +10,13 @@
     &::before {
       @include pseudo;
 
-      background-color: $green;
+      background-color: $blue;
 
       width: 10px;
       height: 10px;
       left: 0;
       top: 5px;
       border-radius: 50%;
-    }
-  }
-}
-
-.lead {
-  position: relative;
-  padding: 3rem;
-  border-radius: 25px;
-  background-color: $light-green;
-  overflow: hidden;
-  z-index: 1;
-
-  &--info {
-    p {
-      max-width: 770px;
-    }
-  
-    .lead__img {
-      position: absolute;
-      right: -40px;
-      bottom: -23px;
-      width: 270px;
-      height: 250px;
-      z-index: -1;
-    }
-  }
-
-  p {
-    font-size: 17px;
-    font-weight: 400;
-  }
-
-  @media (max-width: $media-td) {
-    padding: 2rem;
-
-    .lead__img {
-      width: 200px;
-      height: 180px;
-      right: -25px;
-      bottom: -5px;
-    }
-  }
-
-  @media (max-width: $media-tb) {
-    padding: 1.5rem;
-
-    .lead__img {
-      width: 170px;
-      height: 150px;
-      right: -25px;
-      bottom: -2px;
     }
   }
 }

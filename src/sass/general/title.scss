@@ -1,27 +1,19 @@
 //Title
-h1, h2, h3, h4, h5,
-.h1, .h1-lg, .h2, .h3, .h4, .h5 {
+h1, h2, h3 {
+  font-weight: 400;
   font-family: $font;
   transition: all 0.3s;
 }
 
-h1, .h1 {@include font-size(45px);}
-h2, .h2 {@include font-size(36px);}
-h3, .h3 {@include font-size(24px);}
-h4, .h4 {@include font-size(22px);}
-h5, .h5 {@include font-size(20px);}
+h1 {
+  @include font-size(48px);
+  line-height: 1.3;
+}
+h2 {@include font-size(48px);}
+h3 {@include font-size(40px);}
 
-.fs-64 {
-  font-size: 64px;
-}
-.fs-30 {
-  font-size: 30px;
-}
 .fs-24 {
   font-size: 24px;
-}
-.fs-22 {
-  font-size: 22px;
 }
 .fs-20 {
   font-size: 20px;
@@ -29,72 +21,16 @@ h5, .h5 {@include font-size(20px);}
 .fs-18 {
   font-size: 18px;
 }
-.fs-14 {
-  font-size: 14px;
-}
-.fs-13 {
-  font-size: 13px;
-}
-.fs-12 {
-  font-size: 12px;
-}
 
 // Color
-.color-black {
-  color: $black;
-}
 .color-grey {
   color: $grey;
 }
-.color-white {
-  color: $white;
-}
-.color-green {
-  color: $green;
-}
-
-.text-muted {
-  color: $grey !important;
-  opacity: 0.8;
-}
-
-//Text-size
-.text-small,
-small {
-  font-size: 87%;
-}
-
-// Text-transform
-.text-transform-none {
-  text-transform: none;
-}
-.text-transform-upper {
-  text-transform: uppercase;
+.color-purple {
+  color: $purple;
 }
 
 //font-weight
-.fw-600 {
-  font-weight: 600;
-}
 .fw-500 {
   font-weight: 500;
-}
-.fw-300 {
-  font-weight: 300;
-}
-
-.user-select {
-  user-select: none;
-}
-
-.lh-1 {
-  line-height: 1;
-}
-
-.flex-shrink {
-  flex-shrink: 0;
-}
-
-.lh-15 {
-  line-height: 1.5;
 }
