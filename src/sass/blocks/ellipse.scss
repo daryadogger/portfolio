@@ -1,0 +1,13 @@
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.promo .ellipse {
+  left: -155px;
+  bottom: -115px;
+  width: 315px;
+  height: 315px;
+  background-color: $purple;
+}

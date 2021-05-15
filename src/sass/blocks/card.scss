@@ -1,7 +1,33 @@
 .card {
   width: 100%;
   border: none;
-  background-color: $white;
+  background-color: $purple;
   border-radius: 12px;
   transition: all 0.3s;
+  min-height: 470px;
+  padding: 3rem;
+
+  h3 {
+    color: $white;
+  }
+
+  li {
+    color: $white;
+  }
+
+  &--blue {
+    background-color: $blue;
+  }
+
+  &--orange {
+    background-color: $orange;
+  }
+
+  &--pink {
+    background-color: $pink;
+  }
+
+  &--aqua {
+    background-color: $aqua;
+  }
 }
