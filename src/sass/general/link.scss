@@ -1,3 +1,67 @@
 .link {
   transition: all 0.3s;
 }
+
+.link--round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.link--pink {
+  color: $white;
+  background-color: $pink;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      background-color: $pink-2;
+    }
+  }
+}
+
+.link--blue {
+  color: $white;
+  background-color: $blue;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      background-color: $blue-2;
+    }
+  }
+}
+
+.link--purple {
+  color: $white;
+  background-color: $purple;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      background-color: $purple-2;
+    }
+  }
+}
+
+.link--aqua {
+  color: $white;
+  background-color: $aqua;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      background-color: $aqua-2;
+    }
+  }
+}
+
+.link--orange {
+  color: $white;
+  background-color: $orange;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      background-color: $orange-2;
+    }
+  }
+}
