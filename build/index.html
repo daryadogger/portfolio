@@ -33,11 +33,66 @@
             <h1>Меня зовут Даша! Я frontend разработчик. Создаю адаптивные и кроссбраузерные сайты.</h1>
           </div>
         </div>
+        <ul class="list socials">
+          <li>
+            <a class="link link--blue d-block pb-4" href="mailto:zhihareva.d@mail.ru">
+              <svg width="32" height="32">
+                <use xlink:href="img/sprite/sprite.svg#icon-email"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="link link--pink d-block pb-4" href="https://t.me/daryadogger">
+              <svg width="32" height="32">
+                <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="link link--orange d-block pb-4" href="https://github.com/daryadogger">
+              <svg width="32" height="32">
+                <use xlink:href="img/sprite/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="mb-90">
+    <div class="technologies mb-90">
       <div class="container">
         <h2 class="fw-500 mb-5 color-purple">Технологии</h2>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="technologies__item">
+              <img src="/img/icons/html.svg" alt="">
+              <p>HTML5</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="technologies__item technologies__item--blue">
+              <img src="/img/icons/css.svg" alt="">
+              <p>CCS3</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="technologies__item technologies__item--purple">
+              <img src="/img/icons/js.svg" alt="">
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="technologies__item technologies__item--aqua">
+              <img src="/img/icons/jQuery.svg" alt="">
+              <p>jQuery</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="technologies__item technologies__item--orange">
+              <img src="/img/icons/react.svg" alt="">
+              <p>React</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="projects mb-90">
@@ -170,28 +225,33 @@
       <div class="container">
         <h2 class="fw-500 mb-5 color-purple">Мои сертификаты</h2>
         <div class="row">
-          <div class="col-lg-3 mb-4">
-            <a class="link link--grey" href="">
+          <div class="col-6 col-sm-4 col-lg-3 mb-4">
+            <a class="link link--grey d-block gallery" data-fancybox="gallery" href="img/gallery-1.jpg">
+              <div class="gallery__img bg mb-3" style="background-image: url(img/gallery-1-min.jpg);"></div>
               <p>апрель 2021</p>
             </a>
           </div>
-          <div class="col-lg-3 mb-4">
-            <a class="link link--grey" href="">
+          <div class="col-6 col-sm-4 col-lg-3 mb-4">
+            <a class="link link--grey d-block gallery" data-fancybox="gallery" href="img/gallery-2.jpg">
+              <div class="gallery__img bg mb-3" style="background-image: url(img/gallery-2-min.jpg);"></div>
               <p>август 2019</p>
             </a>
           </div>
-          <div class="col-lg-3 mb-4">
-            <a class="link link--grey" href="">
+          <div class="col-6 col-sm-4 col-lg-3 mb-4">
+            <a class="link link--grey d-block gallery" data-fancybox="gallery" href="img/gallery-3.jpg">
+              <div class="gallery__img bg mb-3" style="background-image: url(img/gallery-3-min.jpg);"></div>
               <p>август 2019</p>
             </a>
           </div>
-          <div class="col-lg-3 mb-4">
-            <a class="link link--grey" href="">
+          <div class="col-6 col-sm-4 col-lg-3 mb-4">
+            <a class="link link--grey d-block gallery" data-fancybox="gallery" href="img/gallery-4.jpg">
+              <div class="gallery__img bg mb-3" style="background-image: url(img/gallery-4-min.jpg);"></div>
               <p>май 2019</p>
             </a>
           </div>
-          <div class="col-lg-3 mb-4">
-            <a class="link link--grey" href="">
+          <div class="col-6 col-sm-4 col-lg-3 mb-4">
+            <a class="link link--grey d-block gallery" data-fancybox="gallery" href="img/gallery-5.jpg">
+              <div class="gallery__img bg mb-3" style="background-image: url(img/gallery-5-min.jpg);"></div>
               <p>февраль 2019</p>
             </a>
           </div>
@@ -200,12 +260,12 @@
     </div>
   </main>
   <footer class="footer">
-    <div class="container pb-5">
+    <div class="container pb-4 pb-lg-5">
       <div class="row mb-4">
         <div class="col-md-5">
           <h2 class="fw-500 mb-5 color-purple">Свяжитесь со мной</h2>
         </div>
-        <div class="col-md-7 d-flex justify-content-end">
+        <div class="col-md-7 d-flex justify-content-sm-end">
           <ul class="list d-flex">
             <li class="mr-5">
               <a class="link link--round link--pink" href="mailto:zhihareva.d@mail.ru">
@@ -231,7 +291,7 @@
           </ul>
         </div>
       </div>
-      <div class="d-flex justify-content-end">
+      <div class="d-flex justify-content-sm-end">
         <a class="link link--grey" href="http://sasha.yus.tilda.ws/">Дизайн – Sasha.yus</a>
       </div>
     </div>

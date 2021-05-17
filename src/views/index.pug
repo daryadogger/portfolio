@@ -23,9 +23,50 @@ block main
           .col-md-7.d-flex.align-items-center
             h1 Меня зовут Даша! Я frontend разработчик. Создаю адаптивные и кроссбраузерные сайты.
 
-    .mb-90
+        ul.list.socials
+          li
+            a.link.link--blue.d-block.pb-4(href="mailto:zhihareva.d@mail.ru")
+              svg(width='32' height='32')
+                use(xlink:href="img/sprite/sprite.svg#icon-email")
+          li
+            a.link.link--pink.d-block.pb-4(href="https://t.me/daryadogger")
+              svg(width='32' height='32')
+                use(xlink:href="img/sprite/sprite.svg#icon-telegram")
+          li
+            a.link.link--orange.d-block.pb-4(href="https://github.com/daryadogger")
+              svg(width='32' height='32')
+                use(xlink:href="img/sprite/sprite.svg#icon-github")
+
+
+    .technologies.mb-90
       .container
         h2.fw-500.mb-5.color-purple Технологии
+
+        .row
+          .col-lg-3
+            .technologies__item
+              img(src="/img/icons/html.svg", alt="")
+              p HTML5
+
+          .col-lg-3
+            .technologies__item.technologies__item--blue
+              img(src="/img/icons/css.svg", alt="")
+              p CCS3
+
+          .col-lg-3
+            .technologies__item.technologies__item--purple
+              img(src="/img/icons/js.svg", alt="")
+              p JavaScript
+
+          .col-lg-3
+            .technologies__item.technologies__item--aqua
+              img(src="/img/icons/jQuery.svg", alt="")
+              p jQuery
+
+          .col-lg-3
+            .technologies__item.technologies__item--orange
+              img(src="/img/icons/react.svg", alt="")
+              p React
 
 
 
@@ -136,24 +177,29 @@ block main
         h2.fw-500.mb-5.color-purple Мои сертификаты
 
         .row
-          .col-lg-3.mb-4
-            a.link.link--grey(href="")
+          .col-6.col-sm-4.col-lg-3.mb-4
+            a.link.link--grey.d-block.gallery(data-fancybox="gallery" href="img/gallery-1.jpg")
+              .gallery__img.bg.mb-3(style="background-image: url(img/gallery-1-min.jpg);")
               p апрель 2021
 
-          .col-lg-3.mb-4
-            a.link.link--grey(href="")
+          .col-6.col-sm-4.col-lg-3.mb-4
+            a.link.link--grey.d-block.gallery(data-fancybox="gallery" href="img/gallery-2.jpg")
+              .gallery__img.bg.mb-3(style="background-image: url(img/gallery-2-min.jpg);")
               p август 2019
 
-          .col-lg-3.mb-4
-            a.link.link--grey(href="")
+          .col-6.col-sm-4.col-lg-3.mb-4
+            a.link.link--grey.d-block.gallery(data-fancybox="gallery" href="img/gallery-3.jpg")
+              .gallery__img.bg.mb-3(style="background-image: url(img/gallery-3-min.jpg);")
               p август 2019
 
-          .col-lg-3.mb-4
-            a.link.link--grey(href="")
+          .col-6.col-sm-4.col-lg-3.mb-4
+            a.link.link--grey.d-block.gallery(data-fancybox="gallery" href="img/gallery-4.jpg")
+              .gallery__img.bg.mb-3(style="background-image: url(img/gallery-4-min.jpg);")
               p май 2019
 
-          .col-lg-3.mb-4
-            a.link.link--grey(href="")
+          .col-6.col-sm-4.col-lg-3.mb-4
+            a.link.link--grey.d-block.gallery(data-fancybox="gallery" href="img/gallery-5.jpg")
+              .gallery__img.bg.mb-3(style="background-image: url(img/gallery-5-min.jpg);")
               p февраль 2019
 
 

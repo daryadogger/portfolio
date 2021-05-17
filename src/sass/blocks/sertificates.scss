@@ -1,0 +1,38 @@
+.gallery {
+  &__img {
+    height: 300px;
+    background-size: contain;
+    background-position: 0% 50%;
+
+  }
+
+  p {
+    font-size: 16px;
+    transition: all 0.3s;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      transform: translateY(-6px);
+      p {
+        color: $aqua;
+      }
+    }
+  }
+}
+
+@media (min-width: $media-tb) {
+  .sertificates .col-lg-3 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+body.compensate-for-scrollbar {
+  margin-right: 0;
+}
+
+.fancybox-bg {
+  background: #030303ab;
+}

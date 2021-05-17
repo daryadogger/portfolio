@@ -2,6 +2,46 @@
   transition: all 0.3s;
 }
 
+.link--grey {
+  color: $grey;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $pink-2;
+    }
+  }
+}
+
+.link--blue {
+  color: $blue;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $blue-2;
+    }
+  }
+}
+
+.link--orange {
+  color: $orange;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $orange-2;
+    }
+  }
+}
+
+.link--pink {
+  color: $pink;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $pink-2;
+    }
+  }
+}
+
 .link--round {
   display: flex;
   align-items: center;
@@ -11,7 +51,7 @@
   border-radius: 50%;
 }
 
-.link--pink {
+.link--round.link--pink {
   color: $white;
   background-color: $pink;
 
@@ -22,7 +62,7 @@
   }
 }
 
-.link--blue {
+.link--round.link--blue {
   color: $white;
   background-color: $blue;
 
@@ -33,7 +73,7 @@
   }
 }
 
-.link--purple {
+.link--round.link--purple {
   color: $white;
   background-color: $purple;
 
@@ -44,7 +84,7 @@
   }
 }
 
-.link--aqua {
+.link--round.link--aqua {
   color: $white;
   background-color: $aqua;
 
@@ -55,7 +95,7 @@
   }
 }
 
-.link--orange {
+.link--round.link--orange {
   color: $white;
   background-color: $orange;
 
