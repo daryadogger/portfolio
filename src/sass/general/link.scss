@@ -49,6 +49,36 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
+
+  @media (max-width: $media-td) {
+    width: 100px;
+    height: 100px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media (max-width: $media-tb) {
+    width: 90px;
+    height: 90px;
+
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    width: 85px;
+    height: 85px;
+
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
 }
 
 .link--round.link--pink {

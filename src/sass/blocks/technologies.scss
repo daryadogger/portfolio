@@ -1,4 +1,4 @@
-@media (min-width: $media-tb) {
+@media (min-width: $media-sm) {
   .technologies .col-lg-3 {
     flex: 0 0 20%;
     max-width: 20%;
@@ -21,6 +21,51 @@
     color: $white;
     cursor: default;
     margin-bottom: 0;
+
+  }
+
+  @media (max-width: 1120px) {
+    width: 170px;
+    height: 170px;
+
+    img {
+      max-width: 50%;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: $media-td) {
+    width: 125px;
+    height: 125px;
+
+    img {
+      max-width: 45%;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: $media-tb) {
+    width: 85px;
+    height: 85px;
+
+    img {
+      max-width: 40%;
+    }
+
+    p {
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    width: 75px;
+    height: 75px;
   }
 
   &--blue {

@@ -1,17 +1,17 @@
 mixin footer(data)
   footer.footer(class!=attributes.class)
     .container.pb-4.pb-lg-5
-      .row.mb-4
+      .row.mb-5.mb-md-4
         .col-md-5
           h2.fw-500.mb-5.color-purple Свяжитесь со мной
 
         .col-md-7.d-flex.justify-content-sm-end
           ul.list.d-flex
-            li.mr-5
+            li.mr-3.mr-sm-5
               a.link.link--round.link--pink(href="mailto:zhihareva.d@mail.ru")
                 svg(width='45' height='45')
                   use(xlink:href="img/sprite/sprite.svg#icon-email")
-            li.mr-5
+            li.mr-3.mr-sm-5
               a.link.link--round.link--blue(href="https://t.me/daryadogger")
                 svg(width='45' height='45')
                   use(xlink:href="img/sprite/sprite.svg#icon-telegram")

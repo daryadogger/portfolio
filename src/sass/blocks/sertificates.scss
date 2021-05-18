@@ -4,6 +4,17 @@
     background-size: contain;
     background-position: 0% 50%;
 
+    @media (max-width: $media-md) {
+      height: 250px;
+    }
+
+    @media (max-width: 1049px) {
+      height: 220px;
+    }
+
+    @media (max-width: 899px) {
+      height: 185px;
+    }
   }
 
   p {
