@@ -1,4 +1,16 @@
 /* stylelint-disable */
+@mixin reset-link($link-color: white) {
+  text-decoration: none;
+  color: $link-color;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 @mixin visually-hidden {
   position: absolute;
 
