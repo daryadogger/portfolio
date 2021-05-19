@@ -158,6 +158,7 @@ gulp.task(`scripts`, () => {
         config.js.mode
       )
     )
+    .pipe(uglify())
     .pipe(plumber())
     .pipe(gulp.dest(config.js.dist));
 });
