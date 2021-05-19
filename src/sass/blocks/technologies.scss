@@ -6,6 +6,7 @@
 }
 
 .technologies__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +15,9 @@
   width: 200px;
   height: 200px;
   background-color: $pink;
+  transition: all 0.5s;
+  transform: translateY(-20px);
+  z-index: 2;
 
   p {
     font-weight: 500;
@@ -21,7 +25,10 @@
     color: $white;
     cursor: default;
     margin-bottom: 0;
+  }
 
+  &.transform {
+    transform: translate(0);
   }
 
   @media (max-width: 1120px) {
@@ -68,19 +75,57 @@
     height: 75px;
   }
 
+  @media (min-width: $media-tb) {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: $pink;
+      transition: all 0.3s;
+      z-index: -1;
+    }
+    &:hover {
+      &::before {
+        width: 108%;
+        height: 108%;
+      }
+    }
+  }
+
   &--blue {
     background-color: $blue;
+
+    &::before {
+      background-color: $blue;
+    }
   }
 
   &--orange {
     background-color: $orange;
+
+    &::before {
+      background-color: $orange;
+    }
   }
 
   &--purple {
     background-color: $purple;
+
+    &::before {
+      background-color: $purple;
+    }
   }
 
   &--aqua {
     background-color: $aqua;
+
+    &::before {
+      background-color: $aqua;
+    }
   }
 }
