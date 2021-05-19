@@ -12,18 +12,71 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-  @media (min-width: $media-tb) {
-    &:hover {
-      background-color: $purple-2;
-    }
-  }
-
   h3 {
     color: $white;
   }
 
   li {
     color: $white;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    transition: all 0.3s;
+  }
+
+  &::before {
+    right: 30px;
+    top: 95px;
+    background: url("../img/icons/star-1.svg") 50% 50% no-repeat;
+    background-size: contain;
+    width: 34px;
+    height: 42px;
+  }
+
+  &::after {
+    left: 30px;
+    bottom: 30px;
+    background: url("../img/icons/star-2.svg") 50% 50% no-repeat;
+    background-size: contain;
+    width: 145px;
+    height: 50px;
+  }
+
+  &--lg {
+    &::before {
+      right: 30px;
+      top: 95px;
+      background: url("../img/icons/star-1.svg") 50% 50% no-repeat;
+      background-size: contain;
+      width: 78px;
+      height: 98px;
+    }
+
+    &::after {
+      left: 30px;
+      bottom: 30px;
+      background: url("../img/icons/star-3.svg") 50% 50% no-repeat;
+      background-size: contain;
+      width: 242px;
+      height: 306px;
+    }
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      background-color: $purple-2;
+
+      &::before {
+        transform: translateY(6px);
+      }
+
+      &::after {
+        transform: translateY(-6px);
+      }
+    }
   }
 
   &--blue {
@@ -63,50 +116,6 @@
       &:hover {
         background-color: $aqua-2;
       }
-    }
-  }
-
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-  }
-
-  &::before {
-    right: 30px;
-    top: 95px;
-    background: url("../img/icons/star-1.svg") 50% 50% no-repeat;
-    background-size: contain;
-    width: 34px;
-    height: 42px;
-  }
-
-  &::after {
-    left: 30px;
-    bottom: 30px;
-    background: url("../img/icons/star-2.svg") 50% 50% no-repeat;
-    background-size: contain;
-    width: 145px;
-    height: 50px;
-  }
-
-  &--lg {
-    &::before {
-      right: 30px;
-      top: 95px;
-      background: url("../img/icons/star-1.svg") 50% 50% no-repeat;
-      background-size: contain;
-      width: 78px;
-      height: 98px;
-    }
-
-    &::after {
-      left: 30px;
-      bottom: 30px;
-      background: url("../img/icons/star-3.svg") 50% 50% no-repeat;
-      background-size: contain;
-      width: 242px;
-      height: 306px;
     }
   }
 }

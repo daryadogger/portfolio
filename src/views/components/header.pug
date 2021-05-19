@@ -1,2 +1,18 @@
 mixin header(data)
   header.header(class!=attributes.class)
+    .container
+      .row
+        .col-md-5
+          img.logo(src="/img/logo.svg", alt="")
+
+        .col-md-7
+          nav.nav
+            ul.list.d-flex
+              li.mr-5
+                a.link.link--grey.d-block.pb-4.js-ankor(href="#about" data-href="#about") Обо мне
+              li.mr-5
+                a.link.link--grey.d-block.pb-4.js-ankor(href="#technologies" data-href="#technologies") Навыки
+              li.mr-5
+                a.link.link--grey.d-block.pb-4.js-ankor(href="#projects" data-href="#projects") Мои работы
+              li
+                a.link.link--grey.d-block.pb-4.js-ankor(href="#sertificates" data-href="#sertificates") Сертификаты

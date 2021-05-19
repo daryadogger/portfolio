@@ -6758,7 +6758,8 @@ body {
 main {
   position: relative;
   -webkit-box-flex: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  padding-top: 110px; }
 
 p {
   line-height: 1.5; }
@@ -7010,84 +7011,25 @@ h3 {
   font-weight: 500; }
 
 .header {
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  padding: 0 0 20px;
+  padding: 22px 0 0;
   background-color: #ffffff;
   z-index: 8;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
-  @media (max-width: 991px) {
-    .header {
-      padding-top: 15px;
-      padding-bottom: 15px; } }
 
 .header.scroll {
-  padding-bottom: 10px;
   -webkit-box-shadow: 2px 2px 20px rgba(4, 20, 106, 0.12);
           box-shadow: 2px 2px 20px rgba(4, 20, 106, 0.12); }
 
-.burger {
-  display: inline-block;
-  padding: 0;
-  text-align: center;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  align-self: center;
-  flex-wrap: wrap;
-  -webkit-box-pack: end;
-          justify-content: flex-end;
-  width: 32px;
-  padding: 0;
-  background: 0 0;
-  border: 0;
-  cursor: pointer;
-  outline: 0 !important;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  z-index: 35;
-  border-radius: 0;
-  overflow: hidden; }
-  .burger .burger__span {
-    display: block;
-    width: 30px;
-    height: 1.5px;
-    background-color: #000000;
-    -webkit-transition: 0.45s;
-    transition: 0.45s;
-    border-radius: 5px;
-    margin-bottom: 6px; }
+.nav a {
+  font-size: 16px; }
   @media (min-width: 767px) {
-    .burger:hover .burger__span {
-      background-color: #000000; } }
-  .burger.is-show {
-    height: 32px; }
-    .burger.is-show .burger__span {
-      background-color: #000000; }
-    .burger.is-show .burger__span--1 {
-      -webkit-transform: translateY(9px) rotate(45deg);
-              transform: translateY(9px) rotate(45deg); }
-    .burger.is-show .burger__span--2 {
-      -webkit-transform: translateX(-34px);
-              transform: translateX(-34px); }
-    .burger.is-show .burger__span--3 {
-      -webkit-transform: translateY(-16px) rotate(-45deg);
-              transform: translateY(-16px) rotate(-45deg); }
-    @media not all and (min-resolution: 0.001dpcm) {
-      @supports (-webkit-appearance: none) {
-        .burger.is-show .burger__span--1 {
-          -webkit-transform: translateY(9px) rotate(45deg);
-                  transform: translateY(9px) rotate(45deg); }
-        .burger.is-show .burger__span--3 {
-          -webkit-transform: translateY(-16px) rotate(-45deg);
-                  transform: translateY(-16px) rotate(-45deg); } } }
+    .nav a:hover {
+      color: #60C7C9; } }
 
 .promo .image {
   height: 535px;
@@ -7126,36 +7068,15 @@ h3 {
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: contain; }
-  @media (min-width: 767px) {
-    .card:hover {
-      background-color: #959EF4; } }
   .card h3 {
     color: #ffffff; }
   .card li {
     color: #ffffff; }
-  .card--blue {
-    background-color: #8FA9FF; }
-    @media (min-width: 767px) {
-      .card--blue:hover {
-        background-color: #688BFF; } }
-  .card--orange {
-    background-color: #FDAD48; }
-    @media (min-width: 767px) {
-      .card--orange:hover {
-        background-color: #FF950F; } }
-  .card--pink {
-    background-color: #F5B9D3; }
-    @media (min-width: 767px) {
-      .card--pink:hover {
-        background-color: #FE93C1; } }
-  .card--aqua {
-    background-color: #60C7C9; }
-    @media (min-width: 767px) {
-      .card--aqua:hover {
-        background-color: #2CE1E4; } }
   .card::before, .card::after {
     position: absolute;
-    content: ""; }
+    content: "";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
   .card::before {
     right: 30px;
     top: 95px;
@@ -7184,6 +7105,35 @@ h3 {
     background-size: contain;
     width: 242px;
     height: 306px; }
+  @media (min-width: 767px) {
+    .card:hover {
+      background-color: #959EF4; }
+      .card:hover::before {
+        -webkit-transform: translateY(6px);
+                transform: translateY(6px); }
+      .card:hover::after {
+        -webkit-transform: translateY(-6px);
+                transform: translateY(-6px); } }
+  .card--blue {
+    background-color: #8FA9FF; }
+    @media (min-width: 767px) {
+      .card--blue:hover {
+        background-color: #688BFF; } }
+  .card--orange {
+    background-color: #FDAD48; }
+    @media (min-width: 767px) {
+      .card--orange:hover {
+        background-color: #FF950F; } }
+  .card--pink {
+    background-color: #F5B9D3; }
+    @media (min-width: 767px) {
+      .card--pink:hover {
+        background-color: #FE93C1; } }
+  .card--aqua {
+    background-color: #60C7C9; }
+    @media (min-width: 767px) {
+      .card--aqua:hover {
+        background-color: #2CE1E4; } }
 
 .card img {
   position: absolute;
