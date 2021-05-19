@@ -2,25 +2,6 @@
   @include reset-list();
 }
 
-.list--point {
-  li {
-    position: relative;
-    padding-left: 27px;
-
-    &::before {
-      @include pseudo;
-
-      background-color: $blue;
-
-      width: 10px;
-      height: 10px;
-      left: 0;
-      top: 5px;
-      border-radius: 50%;
-    }
-  }
-}
-
 .list--check {
   li {
     color: $blue;

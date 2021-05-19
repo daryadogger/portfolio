@@ -22,8 +22,8 @@
 
   &::before,
   &::after {
-    position: absolute;
-    content: "";
+    @include pseudo;
+    
     transition: all 0.3s;
   }
 

@@ -61,8 +61,8 @@
 }
 
 .btn-close {
-  content: "";
-  position: absolute;
+  @include pseudo;
+
   right: 5px;
   top: 25px;
   width: 40px;
@@ -72,8 +72,8 @@
 
   &::before,
   &::after {
-    content: "";
-    position: absolute;
+    @include pseudo;
+    
     width: 32px;
     height: 1.5px;
     top: 50%;

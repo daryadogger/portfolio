@@ -77,8 +77,8 @@
 
   @media (min-width: $media-tb) {
     &::before {
-      position: absolute;
-      content: "";
+      @include pseudo;
+      
       left: 50%;
       top: 50%;
       width: 100%;

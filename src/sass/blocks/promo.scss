@@ -9,11 +9,15 @@
 
 .promo .socials {
   position: absolute;
-  right: -50px;
+  right: -100px;
   top: 180px;
 
-  @media (max-width: 1399px) {
-    right: -10px;
+  @media (max-width: 1449px) {
+    right: -80px;
+  }
+
+  @media (max-width: 1379px) {
+    right: -30px;
   }
 
   @media (max-width: 1299px) {

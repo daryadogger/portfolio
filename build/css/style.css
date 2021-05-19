@@ -6779,30 +6779,6 @@ img {
   max-width: 100%;
   height: auto; }
 
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  opacity: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border: 0;
-  clip: rect(0 0 0 0); }
-
-.visually-hidden-input input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  opacity: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border: 0;
-  clip: rect(0 0 0 0); }
-
 .is-menu-open {
   position: fixed;
   overflow: hidden; }
@@ -6820,14 +6796,8 @@ img {
   .bg--contain {
     background-size: contain; }
 
-.mt-auto {
-  margin-top: auto; }
-
 .p-relative {
   position: relative; }
-
-.overflow-hidden {
-  overflow: hidden; }
 
 .mb-90 {
   margin-bottom: 90px; }
@@ -6938,19 +6908,6 @@ img {
   padding: 0;
   list-style: none; }
 
-.list--point li {
-  position: relative;
-  padding-left: 27px; }
-  .list--point li::before {
-    position: absolute;
-    content: "";
-    background-color: #8FA9FF;
-    width: 10px;
-    height: 10px;
-    left: 0;
-    top: 5px;
-    border-radius: 50%; }
-
 .list--check li {
   color: #8FA9FF;
   font-size: 20px;
@@ -7040,11 +6997,14 @@ h3 {
 
 .promo .socials {
   position: absolute;
-  right: -50px;
+  right: -100px;
   top: 180px; }
-  @media (max-width: 1399px) {
+  @media (max-width: 1449px) {
     .promo .socials {
-      right: -10px; } }
+      right: -80px; } }
+  @media (max-width: 1379px) {
+    .promo .socials {
+      right: -30px; } }
   @media (max-width: 1299px) {
     .promo .socials {
       right: 0; } }

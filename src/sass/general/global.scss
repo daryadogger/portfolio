@@ -55,14 +55,6 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
-  @include visually-hidden;
-}
-
-.visually-hidden-input input {
-  @include visually-hidden;
-}
-
 .is-menu-open {
   position: fixed;
   overflow: hidden;
