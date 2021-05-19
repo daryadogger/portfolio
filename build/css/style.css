@@ -7114,6 +7114,7 @@ h3 {
       right: 15px; } }
 
 .card {
+  position: relative;
   width: 100%;
   border: none;
   background-color: #ACB0D5;
@@ -7121,19 +7122,87 @@ h3 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   min-height: 470px;
-  padding: 3rem; }
+  padding: 3rem;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  @media (min-width: 767px) {
+    .card:hover {
+      background-color: #959EF4; } }
   .card h3 {
     color: #ffffff; }
   .card li {
     color: #ffffff; }
   .card--blue {
     background-color: #8FA9FF; }
+    @media (min-width: 767px) {
+      .card--blue:hover {
+        background-color: #688BFF; } }
   .card--orange {
     background-color: #FDAD48; }
+    @media (min-width: 767px) {
+      .card--orange:hover {
+        background-color: #FF950F; } }
   .card--pink {
     background-color: #F5B9D3; }
+    @media (min-width: 767px) {
+      .card--pink:hover {
+        background-color: #FE93C1; } }
   .card--aqua {
     background-color: #60C7C9; }
+    @media (min-width: 767px) {
+      .card--aqua:hover {
+        background-color: #2CE1E4; } }
+  .card::before, .card::after {
+    position: absolute;
+    content: ""; }
+  .card::before {
+    right: 30px;
+    top: 95px;
+    background: url("../img/icons/star-1.svg") 50% 50% no-repeat;
+    background-size: contain;
+    width: 34px;
+    height: 42px; }
+  .card::after {
+    left: 30px;
+    bottom: 30px;
+    background: url("../img/icons/star-2.svg") 50% 50% no-repeat;
+    background-size: contain;
+    width: 145px;
+    height: 50px; }
+  .card--lg::before {
+    right: 30px;
+    top: 95px;
+    background: url("../img/icons/star-1.svg") 50% 50% no-repeat;
+    background-size: contain;
+    width: 78px;
+    height: 98px; }
+  .card--lg::after {
+    left: 30px;
+    bottom: 30px;
+    background: url("../img/icons/star-3.svg") 50% 50% no-repeat;
+    background-size: contain;
+    width: 242px;
+    height: 306px; }
+
+.card img {
+  position: absolute;
+  right: 20px;
+  bottom: 30px; }
+
+.projects__item:nth-child(2) .card img {
+  right: 50px; }
+
+.projects__item:nth-child(5) .card img {
+  right: 245px; }
+
+.projects__item:nth-child(6) .card img {
+  bottom: 20px; }
+
+.projects__item:nth-child(7) .card img,
+.projects__item:nth-child(8) .card img,
+.projects__item:nth-child(9) .card img {
+  right: 60px; }
 
 .menu {
   position: fixed;

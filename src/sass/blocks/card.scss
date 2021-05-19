@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   width: 100%;
   border: none;
   background-color: $purple;
@@ -6,6 +7,16 @@
   transition: all 0.3s;
   min-height: 470px;
   padding: 3rem;
+
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      background-color: $purple-2;
+    }
+  }
 
   h3 {
     color: $white;
@@ -17,17 +28,109 @@
 
   &--blue {
     background-color: $blue;
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        background-color: $blue-2;
+      }
+    }
   }
 
   &--orange {
     background-color: $orange;
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        background-color: $orange-2;
+      }
+    }
   }
 
   &--pink {
     background-color: $pink;
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        background-color: $pink-2;
+      }
+    }
   }
 
   &--aqua {
     background-color: $aqua;
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        background-color: $aqua-2;
+      }
+    }
   }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &::before {
+    right: 30px;
+    top: 95px;
+    background: url("../img/icons/star-1.svg") 50% 50% no-repeat;
+    background-size: contain;
+    width: 34px;
+    height: 42px;
+  }
+
+  &::after {
+    left: 30px;
+    bottom: 30px;
+    background: url("../img/icons/star-2.svg") 50% 50% no-repeat;
+    background-size: contain;
+    width: 145px;
+    height: 50px;
+  }
+
+  &--lg {
+    &::before {
+      right: 30px;
+      top: 95px;
+      background: url("../img/icons/star-1.svg") 50% 50% no-repeat;
+      background-size: contain;
+      width: 78px;
+      height: 98px;
+    }
+
+    &::after {
+      left: 30px;
+      bottom: 30px;
+      background: url("../img/icons/star-3.svg") 50% 50% no-repeat;
+      background-size: contain;
+      width: 242px;
+      height: 306px;
+    }
+  }
+}
+
+.card img {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+
+.projects__item:nth-child(2) .card img {
+  right: 50px;
+}
+
+.projects__item:nth-child(5) .card img {
+  right: 245px;
+}
+
+.projects__item:nth-child(6) .card img {
+  bottom: 20px;
+}
+
+.projects__item:nth-child(7) .card img,
+.projects__item:nth-child(8) .card img,
+.projects__item:nth-child(9) .card img  {
+  right: 60px;
 }
