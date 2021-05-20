@@ -80,6 +80,10 @@
     }
   }
 
+  &:active {
+    background-color: $purple-2;
+  }
+
   @media (min-width: $media-tb) {
     &:hover {
       background-color: $purple-2;
@@ -97,6 +101,10 @@
   &--blue {
     background-color: $blue;
 
+    &:active {
+      background-color: $blue-2;
+    }
+
     @media (min-width: $media-tb) {
       &:hover {
         background-color: $blue-2;
@@ -106,6 +114,10 @@
 
   &--orange {
     background-color: $orange;
+
+    &:active {
+      background-color: $orange-2;
+    }
 
     @media (min-width: $media-tb) {
       &:hover {
@@ -117,6 +129,10 @@
   &--pink {
     background-color: $pink;
 
+    &:active {
+      background-color: $pink-2;
+    }
+
     @media (min-width: $media-tb) {
       &:hover {
         background-color: $pink-2;
@@ -126,6 +142,10 @@
 
   &--aqua {
     background-color: $aqua;
+
+    &:active {
+      background-color: $aqua-2;
+    }
 
     @media (min-width: $media-tb) {
       &:hover {
@@ -216,6 +236,14 @@
 
   @media (max-width: $media-td) {
     right: 20px;
+  }
+
+  @media (max-width: $media-tb) {
+    max-height: 170px;
+  }
+  
+  @media (max-width: 399px) {
+    max-height: 150px;
   }
 }
 

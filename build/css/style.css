@@ -6771,6 +6771,10 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-tap-highlight-color: transparent; }
+  a:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.2);
+            box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.2); }
   a:hover, a:focus, a:active {
     text-decoration: none; }
 
@@ -6778,10 +6782,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
-
-.is-menu-open {
-  position: fixed;
-  overflow: hidden; }
 
 .container {
   position: relative;
@@ -6834,6 +6834,8 @@ img {
   @media (max-width: 767px) {
     .nav a {
       font-size: 18px; } }
+  .nav a:active {
+    color: #60C7C9; }
   @media (min-width: 767px) {
     .nav a:hover {
       color: #60C7C9; } }
@@ -7030,24 +7032,32 @@ h3 {
 
 .link--grey {
   color: #434242; }
+  .link--grey:active {
+    color: #FE93C1; }
   @media (min-width: 767px) {
     .link--grey:hover {
       color: #FE93C1; } }
 
 .link--blue {
   color: #8FA9FF; }
+  .link--blue:active {
+    color: #688BFF; }
   @media (min-width: 767px) {
     .link--blue:hover {
       color: #688BFF; } }
 
 .link--orange {
   color: #FDAD48; }
+  .link--orange:active {
+    color: #FF950F; }
   @media (min-width: 767px) {
     .link--orange:hover {
       color: #FF950F; } }
 
 .link--pink {
   color: #F5B9D3; }
+  .link--pink:active {
+    color: #FE93C1; }
   @media (min-width: 767px) {
     .link--pink:hover {
       color: #FE93C1; } }
@@ -7087,6 +7097,8 @@ h3 {
 .link--round.link--pink {
   color: #ffffff;
   background-color: #F5B9D3; }
+  .link--round.link--pink:active {
+    background-color: #FE93C1; }
   @media (min-width: 767px) {
     .link--round.link--pink:hover {
       background-color: #FE93C1; } }
@@ -7094,6 +7106,8 @@ h3 {
 .link--round.link--blue {
   color: #ffffff;
   background-color: #8FA9FF; }
+  .link--round.link--blue:active {
+    background-color: #688BFF; }
   @media (min-width: 767px) {
     .link--round.link--blue:hover {
       background-color: #688BFF; } }
@@ -7101,6 +7115,8 @@ h3 {
 .link--round.link--purple {
   color: #ffffff;
   background-color: #ACB0D5; }
+  .link--round.link--purple:active {
+    background-color: #959EF4; }
   @media (min-width: 767px) {
     .link--round.link--purple:hover {
       background-color: #959EF4; } }
@@ -7108,6 +7124,8 @@ h3 {
 .link--round.link--aqua {
   color: #ffffff;
   background-color: #60C7C9; }
+  .link--round.link--aqua:active {
+    background-color: #2CE1E4; }
   @media (min-width: 767px) {
     .link--round.link--aqua:hover {
       background-color: #2CE1E4; } }
@@ -7115,6 +7133,8 @@ h3 {
 .link--round.link--orange {
   color: #ffffff;
   background-color: #FDAD48; }
+  .link--round.link--orange:active {
+    background-color: #FF950F; }
   @media (min-width: 767px) {
     .link--round.link--orange:hover {
       background-color: #FF950F; } }
@@ -7448,6 +7468,8 @@ h3 {
       background-size: contain;
       width: 145px;
       height: 50px; } }
+  .card:active {
+    background-color: #959EF4; }
   @media (min-width: 767px) {
     .card:hover {
       background-color: #959EF4; }
@@ -7459,21 +7481,29 @@ h3 {
                 transform: translateY(-6px); } }
   .card--blue {
     background-color: #8FA9FF; }
+    .card--blue:active {
+      background-color: #688BFF; }
     @media (min-width: 767px) {
       .card--blue:hover {
         background-color: #688BFF; } }
   .card--orange {
     background-color: #FDAD48; }
+    .card--orange:active {
+      background-color: #FF950F; }
     @media (min-width: 767px) {
       .card--orange:hover {
         background-color: #FF950F; } }
   .card--pink {
     background-color: #F5B9D3; }
+    .card--pink:active {
+      background-color: #FE93C1; }
     @media (min-width: 767px) {
       .card--pink:hover {
         background-color: #FE93C1; } }
   .card--aqua {
     background-color: #60C7C9; }
+    .card--aqua:active {
+      background-color: #2CE1E4; }
     @media (min-width: 767px) {
       .card--aqua:hover {
         background-color: #2CE1E4; } }
@@ -7537,6 +7567,12 @@ h3 {
   @media (max-width: 991px) {
     .projects__item:nth-child(2) .card img {
       right: 20px; } }
+  @media (max-width: 767px) {
+    .projects__item:nth-child(2) .card img {
+      max-height: 170px; } }
+  @media (max-width: 399px) {
+    .projects__item:nth-child(2) .card img {
+      max-height: 150px; } }
 
 .projects__item:nth-child(5) .card img {
   right: 245px; }

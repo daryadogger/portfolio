@@ -5,6 +5,10 @@
 .link--grey {
   color: $grey;
 
+  &:active {
+    color: $pink-2;
+  }
+
   @media (min-width: $media-tb) {
     &:hover {
       color: $pink-2;
@@ -14,6 +18,10 @@
 
 .link--blue {
   color: $blue;
+
+  &:active {
+    color: $blue-2;
+  }
 
   @media (min-width: $media-tb) {
     &:hover {
@@ -25,6 +33,10 @@
 .link--orange {
   color: $orange;
 
+  &:active {
+    color: $orange-2;
+  }
+
   @media (min-width: $media-tb) {
     &:hover {
       color: $orange-2;
@@ -34,6 +46,10 @@
 
 .link--pink {
   color: $pink;
+
+  &:active {
+    color: $pink-2;
+  }
 
   @media (min-width: $media-tb) {
     &:hover {
@@ -85,6 +101,10 @@
   color: $white;
   background-color: $pink;
 
+  &:active {
+    background-color: $pink-2;
+  }
+
   @media (min-width: $media-tb) {
     &:hover {
       background-color: $pink-2;
@@ -95,6 +115,10 @@
 .link--round.link--blue {
   color: $white;
   background-color: $blue;
+
+  &:active {
+    background-color: $blue-2;
+  }
 
   @media (min-width: $media-tb) {
     &:hover {
@@ -107,6 +131,10 @@
   color: $white;
   background-color: $purple;
 
+  &:active {
+    background-color: $purple-2;
+  }
+
   @media (min-width: $media-tb) {
     &:hover {
       background-color: $purple-2;
@@ -118,6 +146,10 @@
   color: $white;
   background-color: $aqua;
 
+  &:active {
+    background-color: $aqua-2;
+  }
+
   @media (min-width: $media-tb) {
     &:hover {
       background-color: $aqua-2;
@@ -128,6 +160,10 @@
 .link--round.link--orange {
   color: $white;
   background-color: $orange;
+
+  &:active {
+    background-color: $orange-2;
+  }
 
   @media (min-width: $media-tb) {
     &:hover {

@@ -28,6 +28,10 @@
     font-size: 18px;
   }
 
+  &:active {
+    color: $aqua;
+  }
+
   @media (min-width: $media-tb) {
     &:hover {
       color: $aqua;

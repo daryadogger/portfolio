@@ -42,6 +42,12 @@ a {
   transition: 0.3s;
   -webkit-tap-highlight-color: transparent;
 
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.2);
+  }
+
   &:hover,
   &:focus,
   &:active {
@@ -53,9 +59,4 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.is-menu-open {
-  position: fixed;
-  overflow: hidden;
 }
