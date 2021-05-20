@@ -2,17 +2,17 @@ mixin header(data)
   header.header(class!=attributes.class)
     .container
       .row
-        .col-md-5
+        .col-md-5.mb-2.mb-md-0
           img.logo(src="/img/logo.svg", alt="Логотип")
 
         .col-md-7
           nav.nav
             ul.list.d-flex
-              li.mr-5
-                a.link.link--grey.d-block.pb-4.js-ankor(href="#about" data-href="#about") Обо мне
-              li.mr-5
-                a.link.link--grey.d-block.pb-4.js-ankor(href="#technologies" data-href="#technologies") Навыки
-              li.mr-5
-                a.link.link--grey.d-block.pb-4.js-ankor(href="#projects" data-href="#projects") Мои работы
+              li.mr-3.mr-lg-5
+                a.link.link--grey.d-block.pb-2.pb-md-4.js-ankor(href="#about" data-href="#about") Обо мне
+              li.mr-3.mr-lg-5
+                a.link.link--grey.d-block.pb-2.pb-md-4.js-ankor(href="#technologies" data-href="#technologies") Навыки
+              li.mr-3.mr-lg-5
+                a.link.link--grey.d-block.pb-2.pb-md-4.js-ankor(href="#projects" data-href="#projects") Мои работы
               li
-                a.link.link--grey.d-block.pb-4.js-ankor(href="#sertificates" data-href="#sertificates") Сертификаты
+                a.link.link--grey.d-block.pb-2.pb-md-4.js-ankor(href="#sertificates" data-href="#sertificates") Сертификаты

@@ -7,6 +7,10 @@
   background-color: $white;
   z-index: 8;
   transition: all 0.2s;
+
+  @media (max-width: $media-tb) {
+    padding-top: 12px;
+  }
 }
 
 .header.scroll {
@@ -20,5 +24,11 @@
     &:hover {
       color: $aqua;
     }
+  }
+}
+
+.nav .list {
+  @media (max-width: $media-tb) {
+    flex-wrap: wrap;
   }
 }

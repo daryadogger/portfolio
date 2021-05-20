@@ -1,8 +1,22 @@
 .about .image {
   height: 580px;
-  width: 440px;
+  max-width: 440px;
+  width: 100%;
+
+  @media (max-width: $media-td) {
+    max-width: 100%;
+    height: 450px;
+  }
+
+  @media (max-width: $media-tb) {
+    height: 305px;
+  }
 }
 
 .about .container {
   padding-bottom: 75px;
+
+  @media (max-width: $media-td) {
+    padding-bottom: 0;
+  }
 }

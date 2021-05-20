@@ -38,6 +38,16 @@
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+
+  @media (max-width: $media-tb) {
+    width: 270px;
+    height: 270px;
+  }
+
+  @media (max-width: $media-sm) {
+    width: 260px;
+    height: 260px;
+  }
 }
 
 .about .ellipse {
@@ -64,6 +74,19 @@
   top: 30px;
   width: 82px;
   height: 70px;
+
+  @media (max-width: 1380px) {
+    right: 100px;
+  }
+
+  @media (max-width: $media-md) {
+    top: auto;
+    bottom: -20px;
+  }
+
+  @media (max-width: $media-sm) {
+    bottom: -60px;
+  }
 }
 
 .ellipses__item {
