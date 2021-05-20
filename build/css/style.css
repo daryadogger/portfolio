@@ -7212,6 +7212,11 @@ h3 {
   width: 220px;
   height: 220px;
   background-color: #FDAD48; }
+  @media (max-width: 767px) {
+    .about .ellipse {
+      bottom: -30px;
+      width: 200px;
+      height: 200px; } }
 
 .ellipses {
   position: absolute; }
@@ -7221,6 +7226,12 @@ h3 {
   top: 0;
   width: 52px;
   height: 93px; }
+  @media (max-width: 991px) {
+    .about .ellipses {
+      top: -20px; } }
+  @media (max-width: 767px) {
+    .about .ellipses {
+      top: -35px; } }
 
 .promo .ellipses {
   right: 40px;
@@ -7379,6 +7390,7 @@ h3 {
   transition: all 0.3s;
   min-height: 470px;
   padding: 3rem;
+  z-index: 1;
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: contain; }
@@ -7419,6 +7431,15 @@ h3 {
     background-size: contain;
     width: 242px;
     height: 306px; }
+  @media (max-width: 767px) {
+    .card--lg::before {
+      width: 34px;
+      height: 42px; }
+    .card--lg::after {
+      background: url("../img/icons/star-2.svg") 50% 50% no-repeat;
+      background-size: contain;
+      width: 145px;
+      height: 50px; } }
   @media (min-width: 767px) {
     .card:hover {
       background-color: #959EF4; }
@@ -7448,17 +7469,92 @@ h3 {
     @media (min-width: 767px) {
       .card--aqua:hover {
         background-color: #2CE1E4; } }
+  @media (max-width: 1199px) {
+    .card {
+      min-height: 420px;
+      padding: 2.5rem; } }
+  @media (max-width: 991px) {
+    .card {
+      padding: 1.5rem;
+      min-height: 370px; }
+      .card .fs-20 {
+        font-size: 18px; }
+      .card::before {
+        right: 20px;
+        top: 35px; }
+      .card::after {
+        left: 15px;
+        bottom: 20px;
+        width: 120px; }
+      .card--lg::after {
+        width: 145px; } }
+  @media (max-width: 767px) {
+    .card {
+      min-height: 350px; }
+      .card::before {
+        right: 10px;
+        top: 35px; }
+      .card::after {
+        left: 15px;
+        bottom: 15px;
+        width: 105px; } }
+  @media (max-width: 575px) {
+    .card {
+      min-height: 300px; } }
 
 .card img {
   position: absolute;
   right: 20px;
-  bottom: 30px; }
+  bottom: 30px;
+  z-index: -1; }
+  @media (max-width: 1199px) {
+    .card img {
+      max-width: 250px;
+      max-height: 250px; } }
+  @media (max-width: 991px) {
+    .card img {
+      max-width: 200px;
+      max-height: 200px; } }
+  @media (max-width: 767px) {
+    .card img {
+      max-width: 175px;
+      max-height: 175px; } }
+  @media (max-width: 399px) {
+    .card img {
+      max-width: 145px;
+      max-height: 145px; } }
 
 .projects__item:nth-child(2) .card img {
   right: 50px; }
+  @media (max-width: 991px) {
+    .projects__item:nth-child(2) .card img {
+      right: 20px; } }
 
 .projects__item:nth-child(5) .card img {
   right: 245px; }
+  @media (max-width: 1199px) {
+    .projects__item:nth-child(5) .card img {
+      max-width: 420px;
+      max-height: 340px; } }
+  @media (max-width: 991px) {
+    .projects__item:nth-child(5) .card img {
+      right: 180px;
+      max-width: 300px;
+      max-height: 240px; } }
+  @media (max-width: 767px) {
+    .projects__item:nth-child(5) .card img {
+      right: 105px;
+      max-width: 260px;
+      max-height: 240px; } }
+  @media (max-width: 575px) {
+    .projects__item:nth-child(5) .card img {
+      right: 20px;
+      max-width: 195px;
+      max-height: 195px; } }
+  @media (max-width: 399px) {
+    .projects__item:nth-child(5) .card img {
+      max-width: 160px;
+      max-height: 175px; } }
 
 .projects__item:nth-child(6) .card img {
   bottom: 20px; }
@@ -7467,6 +7563,31 @@ h3 {
 .projects__item:nth-child(8) .card img,
 .projects__item:nth-child(9) .card img {
   right: 60px; }
+  @media (max-width: 1199px) {
+    .projects__item:nth-child(7) .card img,
+    .projects__item:nth-child(8) .card img,
+    .projects__item:nth-child(9) .card img {
+      max-width: 230px;
+      max-height: 230px; } }
+  @media (max-width: 991px) {
+    .projects__item:nth-child(7) .card img,
+    .projects__item:nth-child(8) .card img,
+    .projects__item:nth-child(9) .card img {
+      right: 20px;
+      max-width: 185px;
+      max-height: 185px; } }
+  @media (max-width: 767px) {
+    .projects__item:nth-child(7) .card img,
+    .projects__item:nth-child(8) .card img,
+    .projects__item:nth-child(9) .card img {
+      max-width: 165px;
+      max-height: 165px; } }
+  @media (max-width: 399px) {
+    .projects__item:nth-child(7) .card img,
+    .projects__item:nth-child(8) .card img,
+    .projects__item:nth-child(9) .card img {
+      max-width: 125px;
+      max-height: 125px; } }
 
 .projects .max-width {
   max-width: 465px; }

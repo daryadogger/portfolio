@@ -7,6 +7,7 @@
   transition: all 0.3s;
   min-height: 470px;
   padding: 3rem;
+  z-index: 1;
 
   background-position: 100% 100%;
   background-repeat: no-repeat;
@@ -23,7 +24,7 @@
   &::before,
   &::after {
     @include pseudo;
-    
+
     transition: all 0.3s;
   }
 
@@ -62,6 +63,20 @@
       background-size: contain;
       width: 242px;
       height: 306px;
+    }
+
+    @media (max-width: $media-tb) {
+      &::before {
+        width: 34px;
+        height: 42px;
+      }
+
+      &::after {
+        background: url("../img/icons/star-2.svg") 50% 50% no-repeat;
+        background-size: contain;
+        width: 145px;
+        height: 50px;
+      }
     }
   }
 
@@ -118,20 +133,125 @@
       }
     }
   }
+
+  @media (max-width: $media-md) {
+    min-height: 420px;
+    padding: 2.5rem;
+  }
+
+  @media (max-width: $media-td) {
+    padding: 1.5rem;
+    min-height: 370px;
+
+    .fs-20 {
+      font-size: 18px;
+    }
+
+    &::before {
+      right: 20px;
+      top: 35px;
+    }
+
+    &::after {
+      left: 15px;
+      bottom: 20px;
+      width: 120px;
+    }
+
+    &--lg::after {
+      width: 145px;
+    }
+  }
+
+  @media (max-width: $media-tb) {
+    min-height: 350px;
+
+    &::before {
+      right: 10px;
+      top: 35px;
+    }
+
+    &::after {
+      left: 15px;
+      bottom: 15px;
+      width: 105px;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    min-height: 300px;
+  }
 }
 
 .card img {
   position: absolute;
   right: 20px;
   bottom: 30px;
+  z-index: -1;
+
+  @media (max-width: $media-md) {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  @media (max-width: $media-td) {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+
+  @media (max-width: $media-tb) {
+    max-width: 175px;
+    max-height: 175px;
+  }
+
+  @media (max-width: 399px) {
+    max-width: 145px;
+    max-height: 145px;
+  }
 }
 
 .projects__item:nth-child(2) .card img {
   right: 50px;
+
+  @media (max-width: $media-td) {
+    right: 20px;
+  }
 }
 
 .projects__item:nth-child(5) .card img {
   right: 245px;
+
+  @media (max-width: $media-md) {
+    max-width: 420px;
+    max-height: 340px;
+  }
+
+  @media (max-width: $media-td) {
+    right: 180px;
+
+    max-width: 300px;
+    max-height: 240px;
+  }
+
+  @media (max-width: $media-tb) {
+    right: 105px;
+
+    max-width: 260px;
+    max-height: 240px;
+  }
+
+  @media (max-width: $media-sm) {
+    right: 20px;
+
+    max-width: 195px;
+    max-height: 195px;
+  }
+
+  @media (max-width: 399px) {
+    max-width: 160px;
+    max-height: 175px;
+  }
 }
 
 .projects__item:nth-child(6) .card img {
@@ -142,4 +262,26 @@
 .projects__item:nth-child(8) .card img,
 .projects__item:nth-child(9) .card img  {
   right: 60px;
+
+  @media (max-width: $media-md) {
+    max-width: 230px;
+    max-height: 230px;
+  }
+
+  @media (max-width: $media-td) {
+    right: 20px;
+
+    max-width: 185px;
+    max-height: 185px;
+  }
+
+  @media (max-width: $media-tb) {
+    max-width: 165px;
+    max-height: 165px;
+  }
+
+  @media (max-width: 399px) {
+    max-width: 125px;
+    max-height: 125px;
+  }
 }

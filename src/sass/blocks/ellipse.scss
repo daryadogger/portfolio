@@ -56,6 +56,12 @@
   width: 220px;
   height: 220px;
   background-color: $orange;
+
+  @media (max-width: $media-tb) {
+    bottom: -30px;
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .ellipses {
@@ -67,6 +73,14 @@
   top: 0;
   width: 52px;
   height: 93px;
+
+  @media (max-width: $media-td) {
+    top: -20px;
+  }
+
+  @media (max-width: $media-tb) {
+    top: -35px;
+  }
 }
 
 .promo .ellipses {
