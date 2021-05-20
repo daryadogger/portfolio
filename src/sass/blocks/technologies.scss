@@ -50,6 +50,7 @@
 
     img {
       max-width: 45%;
+      max-height: 56px;
     }
 
     p {
@@ -63,6 +64,7 @@
 
     img {
       max-width: 40%;
+      max-height: 36px;
     }
 
     p {
@@ -78,7 +80,7 @@
   @media (min-width: $media-tb) {
     &::before {
       @include pseudo;
-      
+
       left: 50%;
       top: 50%;
       width: 100%;
