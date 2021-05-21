@@ -232,7 +232,7 @@
 }
 
 .projects__item:nth-child(2) .card img {
-  right: 50px;
+  right: 30px;
 
   @media (max-width: $media-td) {
     right: 20px;
@@ -241,7 +241,7 @@
   @media (max-width: $media-tb) {
     max-height: 170px;
   }
-  
+
   @media (max-width: 399px) {
     max-height: 150px;
   }
@@ -282,14 +282,14 @@
   }
 }
 
-.projects__item:nth-child(6) .card img {
+.projects__item:nth-child(9) .card img {
   bottom: 20px;
 }
 
-.projects__item:nth-child(7) .card img,
-.projects__item:nth-child(8) .card img,
-.projects__item:nth-child(9) .card img  {
-  right: 60px;
+.projects__item:nth-child(4) .card img,
+.projects__item:nth-child(1) .card img,
+.projects__item:nth-child(6) .card img  {
+  right: 30px;
 
   @media (max-width: $media-md) {
     max-width: 230px;
