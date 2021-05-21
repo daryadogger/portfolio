@@ -309,6 +309,20 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -6773,8 +6787,8 @@ a {
   -webkit-tap-highlight-color: transparent; }
   a:focus {
     outline: none;
-    -webkit-box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.2);
-            box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.2); }
+    -webkit-box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.05);
+            box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.05); }
   a:hover, a:focus, a:active {
     text-decoration: none; }
 

@@ -15,7 +15,6 @@ const minify = require(`gulp-csso`);
 
 //images
 const imagemin = require(`gulp-imagemin`);
-const mozjpeg = require(`imagemin-mozjpeg`);
 const svgstore = require(`gulp-svgstore`);
 
 //js
@@ -34,6 +33,7 @@ const format = require(`gulp-format-html`);
 const config = {
   dist: `build`,
   src: `src`,
+  fonts: `src/fonts/**/*.{woff,woff2}`,
   img: `src/img/**/*.{png,jpg,svg,ico}`,
   html: `src/*.html`,
   libs: `src/libs/**/*.{js,css}`,
@@ -72,7 +72,7 @@ gulp.task(`clean`, () => {
 
 gulp.task(`copy`, () => {
   return gulp
-    .src([config.svg.src, config.img], {
+    .src([config.fonts, config.svg.src, config.img], {
       base: config.src
     })
     .pipe(gulp.dest(config.dist));
@@ -219,10 +219,16 @@ gulp.task(`pug`, () => {
 gulp.task(`image`, () => {
   return gulp
     .src(config.img)
-    .pipe(imagemin(mozjpeg({
-      quality: 75,
-      progressive: true,
-    })))
+    .pipe(imagemin({
+        interlaced: true,
+        progressive: true,
+        optimizationLevel: 5,
+        svgoPlugins: [
+            {
+                removeViewBox: true
+            }
+        ]
+    }))
     .pipe(gulp.dest(`build/img`));
 });
 
