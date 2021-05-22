@@ -1,0 +1,13 @@
+@mixin font-face($Roboto-name, $file-name, $weight: 400, $style: normal) {
+  @font-face {
+    font-family: $Roboto-name;
+    src: url($file-name + ".woff2") format("woff2"),
+      url($file-name + ".woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+
+@include font-face("Montserrat", "../fonts/Montserrat-Regular");
+@include font-face("Montserrat", "../fonts/Montserrat-Medium", 500);

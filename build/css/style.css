@@ -309,6 +309,20 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -6773,8 +6787,8 @@ a {
   -webkit-tap-highlight-color: transparent; }
   a:focus {
     outline: none;
-    -webkit-box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.2);
-            box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.2); }
+    -webkit-box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.05);
+            box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.05); }
   a:hover, a:focus, a:active {
     text-decoration: none; }
 
@@ -7563,7 +7577,7 @@ h3 {
       max-height: 145px; } }
 
 .projects__item:nth-child(2) .card img {
-  right: 50px; }
+  right: 30px; }
   @media (max-width: 991px) {
     .projects__item:nth-child(2) .card img {
       right: 20px; } }
@@ -7600,36 +7614,36 @@ h3 {
       max-width: 160px;
       max-height: 175px; } }
 
-.projects__item:nth-child(6) .card img {
+.projects__item:nth-child(9) .card img {
   bottom: 20px; }
 
-.projects__item:nth-child(7) .card img,
-.projects__item:nth-child(8) .card img,
-.projects__item:nth-child(9) .card img {
-  right: 60px; }
+.projects__item:nth-child(4) .card img,
+.projects__item:nth-child(1) .card img,
+.projects__item:nth-child(6) .card img {
+  right: 30px; }
   @media (max-width: 1199px) {
-    .projects__item:nth-child(7) .card img,
-    .projects__item:nth-child(8) .card img,
-    .projects__item:nth-child(9) .card img {
+    .projects__item:nth-child(4) .card img,
+    .projects__item:nth-child(1) .card img,
+    .projects__item:nth-child(6) .card img {
       max-width: 230px;
       max-height: 230px; } }
   @media (max-width: 991px) {
-    .projects__item:nth-child(7) .card img,
-    .projects__item:nth-child(8) .card img,
-    .projects__item:nth-child(9) .card img {
+    .projects__item:nth-child(4) .card img,
+    .projects__item:nth-child(1) .card img,
+    .projects__item:nth-child(6) .card img {
       right: 20px;
       max-width: 185px;
       max-height: 185px; } }
   @media (max-width: 767px) {
-    .projects__item:nth-child(7) .card img,
-    .projects__item:nth-child(8) .card img,
-    .projects__item:nth-child(9) .card img {
+    .projects__item:nth-child(4) .card img,
+    .projects__item:nth-child(1) .card img,
+    .projects__item:nth-child(6) .card img {
       max-width: 165px;
       max-height: 165px; } }
   @media (max-width: 399px) {
-    .projects__item:nth-child(7) .card img,
-    .projects__item:nth-child(8) .card img,
-    .projects__item:nth-child(9) .card img {
+    .projects__item:nth-child(4) .card img,
+    .projects__item:nth-child(1) .card img,
+    .projects__item:nth-child(6) .card img {
       max-width: 125px;
       max-height: 125px; } }
 
