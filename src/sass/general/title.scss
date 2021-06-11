@@ -10,7 +10,7 @@ h1 {
   line-height: 1.3;
 
   @media (min-width: $media-md) {
-    font-size: 48px;
+    font-size: 48px !important;
   }
 
   @media (max-width: 1050px) {
